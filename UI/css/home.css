@@ -1,0 +1,259 @@
+
+body{
+    font-family: "Inter var", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    border-right-color: rgb(238, 238, 238);;
+    left: 0;
+    border-right-style: solid;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn , .dropdown-btn1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: #020202a5;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover , img:hover , .dropdown-btn:hover ,.dropdown-btn1:hover {
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  .dropdown-btn , .dropdown-btn1{
+    color: #020202a5;
+  }
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+.fa-caret-down:before {
+    content: "\f0d7";
+    margin-left: -30px;
+}
+.fa-caret-down1 {
+    float: right;
+    padding-right: 8px;
+}
+.fa-caret-down1:before {
+    content: "\f0d7";
+    margin-left: -130px;
+}
+  .sidenav-home{
+    border: none;
+    user-select: none;
+    display: flex;
+    width: calc(100% - 59px);
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 3px 0px;
+    background-color: rgb(249, 247, 246);
+    border-radius: 9px;
+    margin-top: -35px;
+    margin-left: 20px;
+  }
+
+.dropdown-btn {
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
+.dropdown-btn1 {
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
+.sidenav-contact{
+    border: none;
+    user-select: none;
+    display: flex;
+    width: calc(100% - 59px);
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 3px 0px;
+    background-color: rgb(249, 247, 246);
+    border-radius: 9px;
+    margin-top: -35px;
+    margin-left: 20px;
+}
+
+.home-search-form{
+    text-align: center;
+}
+.search-box{
+    width: 40%;
+    height: 40px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 25px 0px 0px 25px;
+    border: 1px solid grey;
+    padding: 0px 15px;
+    
+}
+.search-submit{
+    height: 42px;
+    margin-left: -5px;
+    margin-top: 5px;
+    width: 5%;
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+
+
+/* This is for the profile picture */
+
+.icons-size{
+    color: #333;
+    font-size: 14px;
+}
+.action{
+    position: fixed;
+    right: 30px;
+    top:20px;
+    
+}
+.action .profile{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    
+}
+.action .profile img{
+    width: 100%;
+    top:0;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+}
+.action .menu{
+    background-color:#FFF;
+    box-sizing:0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: -10px;
+    width: 200px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    border:1px solid #333;
+}
+.action .menu.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+/* .action .menu::before{
+    background-color:#fff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+} */
+.action .menu h3{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: left;
+    width: 100%;
+    margin-top: -15px;
+}
+.action .menu h3 div{
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+}
+.action .menu ul{
+    margin-left: -30px;
+    margin-top: -17px;
+}
+.action .menu ul li{
+    align-items: center;
+    border-top:1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 10px 0px;
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition:0.5s
+}
+.action .menu ul li a{
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.action .menu ul li:hover a{
+    color:rgb(12, 108, 242);
+}
+
+#search-result{
+    margin-left: 25%;
+    margin-top: 5%;
+}

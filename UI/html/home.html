@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/home.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <div class="sidenav">
+                <div style="margin-left: 25px;">
+                    <img src="../img/home-icon.png" width="30px" class="home-icon-img">
+                    <a href="#about" class="sidenav-home">Home</a>
+                </div>
+                <div style="margin-left: 25px;margin-top:20px;">
+                    <img src="../img/crypto-coin.png" width="30px" class="home-icon-img">
+                    <button class="dropdown-btn">Cryptocurrencies
+                        <i class="fa fa-caret-down" style="margin-left:-10%"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p>Bitcoin</p>
+                        <p>Ethereum</p>
+                        <p>Cosmos</p>
+                        <p>Algorand</p>
+                        <p>DogeCoin</p>
+                        <p>Litecoin</p>
+                        <p>Bitcoin Cash</p>
+                        <p>Dash</p>
+                        <p>ZCash</p>
+                        <p>NEM</p>
+                        <p>XRP</p>
+                        <p>Tron</p>
+                        <p>Cardano</p>
+                        <p>Polygon</p>
+                        <p>Polkadot</p>
+                        <p>Monero</p>
+                        <p>Avalanche</p>
+                        <p>Bitcoin Gold</p>
+                    </div>
+                </div>
+                <div style="margin-left: 25px;margin-top:20px;">
+                    <img src="../img/nft-icon.png" width="30px" class="home-icon-img">
+                    <button class="dropdown-btn1">NFTs 
+                        <i class="fa fa-caret-down1"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p>Internet Computer (ICP)</p>
+                        <p>ApeCoin (APE)</p>
+                        <p>The Sandbox (SAND)</p>
+                        <p>Stacks (STX)</p>
+                        <p>Render Token (RNDR)</p>
+                        <p>Tezos (XTZ)</p>
+                        <p>Decentraland (MANA)</p>
+                        <p>Theta Network (THETA)</p>
+                        <p>Axie Infinity (AXS)</p>
+                        <p>Conflux (CFX)</p>
+                        <p>Flow (FLOW)</p>
+                        <p>Crypto kitties</p>
+                        <p>Crypto punks</p>
+                        <p>Crypto celebrities</p>
+                    </div>
+                </div>
+                <div style="margin-left: 25px;margin-top:20px;">
+                    <img src="../img/contact-me.png" width="30px" class="home-icon-img">
+                    <a href="#contact" class="sidenav-contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="width: 90%;margin-top: 2%;margin-left: 8%;">
+                <form class="home-search-form" onsubmit="bcapicall(event)">
+                    <input type="text" name="search" placeholder=" Search Blockchain, Transactions, Addresses and Blocks" class="search-box" id="searchbc" required>
+                    <input type="submit" value="&#128269" class="search-submit">
+                </form>
+            </div>
+            <div>
+                <div class="action">
+                    <div class="profile" onclick="menuToggle();">
+                        <img src="../img/profile.png" alt="">
+                    </div>
+            
+                    <div class="menu">
+                        <h3>
+                            User Account
+                        </h3>
+                        <ul>
+                            <li>
+                                <span class="material-icons icons-size">person</span>
+                                <a href="#">My Profile</a>
+                            </li>
+                            <li>
+                                <span class="material-icons icons-size">mode</span>
+                                <a href="#">Edit Account</a>
+                            </li>
+                            <li>
+                                <span class="material-icons icons-size">account_balance_wallet</span>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="search-result"></div>
+    </body>
+    <script type="text/javascript" src="../js/home-dropdown.js"></script> 
+    <script type="text/javascript" src="../js/search-api.js"></script> 
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</html>
